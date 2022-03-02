@@ -2,6 +2,11 @@
 name = "cpreprocess"
 version = "1.0.0"
 edition = "2021"
+description = "Procedural macro that runs a C preprocessor on the input"
+authors = ["William Venner <william@venner.io>"]
+license = "MIT"
+keywords = ["c", "preprocessor", "preprocess"]
+repository = "https://github.com/WilliamVenner/cpreprocess"
 
 [lib]
 proc-macro = true
