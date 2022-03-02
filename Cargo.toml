@@ -1,0 +1,13 @@
+[package]
+name = "cpreprocess"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+cc = "1"
+lazy_static = "1"
+uuid = { version = "0", features = ["v4"] }
+syn = "1"
