@@ -4,13 +4,13 @@
 //!
 //! ```no_run
 //! fn main() {
-//! 	cpreprocess::cpreprocess! {"
-//! 		#define MACRO(NAME) fn print_ ## NAME () { println!(\"hello world\"); }
+//!     cpreprocess::cpreprocess! {"
+//!         #define MACRO(NAME) fn print_ ## NAME () { println!(\"hello world\"); }
 //!
-//! 		MACRO(hello_world)
+//!         MACRO(hello_world)
 //!
-//! 		print_hello_world()
-//! 	"}
+//!         print_hello_world()
+//!     "}
 //! }
 //! ```
 
@@ -25,13 +25,13 @@ use proc_macro::TokenStream;
 ///
 /// ```no_run
 /// fn main() {
-/// 	cpreprocess::cpreprocess! {"
-/// 		#define MACRO(NAME) fn print_ ## NAME () { println!(\"hello world\"); }
+///     cpreprocess::cpreprocess! {"
+///         #define MACRO(NAME) fn print_ ## NAME () { println!(\"hello world\"); }
 ///
-/// 		MACRO(hello_world)
+///         MACRO(hello_world)
 ///
-/// 		print_hello_world()
-/// 	"}
+///         print_hello_world()
+///     "}
 /// }
 /// ```
 pub fn cpreprocess(tokens: TokenStream) -> TokenStream {
