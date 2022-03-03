@@ -1,6 +1,6 @@
 [package]
 name = "cpreprocess"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 description = "Procedural macro that runs a C preprocessor on the input"
 authors = ["William Venner <william@venner.io>"]

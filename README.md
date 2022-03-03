@@ -17,12 +17,12 @@ cpreprocess = "*"
 
 ```rust
 fn main() {
-    cpreprocess::cpreprocess! {"
-        #define MACRO(NAME) fn print_ ## NAME () { println!(\"hello world\"); }
+    cpreprocess::cpreprocess!(r#"
+        #define MACRO(NAME) fn print_ ## NAME () { println!("hello world"); }
 
         MACRO(hello_world)
 
         print_hello_world()
-    "}
+    "#)
 }
 ```
