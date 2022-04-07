@@ -16,10 +16,11 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "cpreprocess"
-version = "1.0.1"
+version = "1.0.2"
 dependencies = [
  "cc",
  "lazy_static",
+ "proc-macro-faithful-display",
  "syn",
  "uuid",
 ]
@@ -46,6 +47,12 @@ name = "libc"
 version = "0.2.119"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1bf2e165bb3457c8e098ea76f3e3bc9db55f87aa90d52d0e6be741470916aaa4"
+
+[[package]]
+name = "proc-macro-faithful-display"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dbe231f13fcc38ec38d8cf0cd3004a892e807ac9629d811a17558307fe534351"
 
 [[package]]
 name = "proc-macro2"
