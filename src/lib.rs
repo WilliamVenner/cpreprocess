@@ -3,15 +3,13 @@
 //! # Example
 //!
 //! ```no_run
-//! fn main() {
-//!     cpreprocess::cpreprocess!(r#"
-//!         #define MACRO(NAME) fn print_ ## NAME () { println!("hello world"); }
+//! cpreprocess::cpreprocess!(r#"
+//!     #define MACRO(NAME) fn print_ ## NAME () { println!("hello world"); }
 //!
-//!         MACRO(hello_world)
+//!     MACRO(hello_world)
 //!
-//!         print_hello_world()
-//!     "#)
-//! }
+//!     print_hello_world()
+//! "#)
 //! ```
 
 mod cpp;
@@ -24,15 +22,13 @@ use proc_macro::TokenStream;
 /// # Example
 ///
 /// ```no_run
-/// fn main() {
-///     cpreprocess::cpreprocess!(r#"
-///         #define MACRO(NAME) fn print_ ## NAME () { println!("hello world"); }
+/// cpreprocess::cpreprocess!(r#"
+///     #define MACRO(NAME) fn print_ ## NAME () { println!("hello world"); }
 ///
-///         MACRO(hello_world)
+///     MACRO(hello_world)
 ///
-///         print_hello_world()
-///     "#)
-/// }
+///     print_hello_world()
+/// "#)
 /// ```
 pub fn cpreprocess(tokens: TokenStream) -> TokenStream {
 	let tokens = syn::parse_macro_input!(tokens as syn::LitStr).value();
