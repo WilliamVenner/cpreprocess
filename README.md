@@ -41,6 +41,6 @@ fn main() {
         MACRO(hello_world)
 
         print_hello_world()
-	}
+    }
 }
 ```
